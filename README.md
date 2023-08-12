@@ -26,13 +26,26 @@ Before building the models, we perform essential data preprocessing steps. Categ
 
 K-means Clustering, a common algorithm for anomaly detection, is applied to the dataset. The Elbow Method is used to find the optimal number of clusters (K). Based on the analysis, K=3 is selected as the optimal value. However, when K-means Clustering is used for supervised learning, it fails to predict all five attack categories accurately, leading to partial success for three classes and accurate prediction for two.
 
+![image](https://github.com/tasawarz/Intrusion-Detection/assets/119436229/5488a4b1-a38f-4f7d-9621-57be34b9ca94)
+
+![image](https://github.com/tasawarz/Intrusion-Detection/assets/119436229/866114d4-5c6f-4243-934a-c5d0bc99c236)
+
+![image](https://github.com/tasawarz/Intrusion-Detection/assets/119436229/2fd19a5c-ef17-4ffb-9f7a-f6a0a968d4bd)
+
 ### Random Forest Classifier
 
-To improve the accuracy of intrusion detection, we employ the Random Forest Classifier. This ensemble method demonstrates exceptional performance, achieving a high accuracy of 99.9% on both training and test datasets. The model shows a balanced ability to detect all five attack categories, with impressive F1-scores across most classes.
+To improve the accuracy of intrusion detection, we employ the Random Forest Classifier. This ensemble method demonstrates exceptional performance, achieving a high accuracy of 99.9% on both training and test datasets. The model shows a balanced ability to detect all five attack categories, with impressive F1-scores across most classes. Yellowbrick Library is used to visualize feature importance and learning curve.
+![image](https://github.com/tasawarz/Intrusion-Detection/assets/119436229/fc6f4d13-a3bd-47f5-9f0d-0fb53df1a280)
+
+Yellowbrick library was used to create a confusion matrix for five classes.
+
+![image](https://github.com/tasawarz/Intrusion-Detection/assets/119436229/e4bd8caa-00a9-4946-82fc-9ba91783c985)
 
 ### Feature Importance
 
 An essential aspect of the Random Forest Classifier is the feature importance analysis. We gain insights into which features contribute most significantly to the model's accuracy. This information can guide us in selecting relevant features when building future intrusion detection systems.
+![image](https://github.com/tasawarz/Intrusion-Detection/assets/119436229/92283eb7-f96b-4cdd-82d0-420ea3141cd7)
+
 
 ## Conclusion
 
